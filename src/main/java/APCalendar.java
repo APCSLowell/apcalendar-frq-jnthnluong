@@ -61,4 +61,5 @@ public class APCalendar
     int currentDay = dayOfYear(month,day,year);
     int first = firstDayOfYear(year)-1;
     return (currentDay+first)%7;
+  }
 }
