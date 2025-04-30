@@ -59,9 +59,6 @@ public class APCalendar
   {
     /* to be implemented in part (b) */
     int currentDay = dayOfYear(month,day,year);
-    int first = firstDayOfYear(year)+1;
-    while(first+7 < currentDay)
-      first+=7;
-    return currentDay-first-1;
-  }
+    int first = firstDayOfYear(year)-1;
+    return (currentDay+first)%7
 }
